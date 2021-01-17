@@ -1,2 +1,2 @@
 # swipe-random-letters-ios
-A free, open-sourced SwiftUI kids game.
+A free, open-source kids game.
