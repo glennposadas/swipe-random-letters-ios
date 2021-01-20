@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451C9AA125B872CB002CBFB5 /* HomeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C9AA025B872CB002CBFB5 /* HomeSettingsViewController.swift */; };
 		455CDE322599F00300742F46 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE2E2599F00200742F46 /* Delay.swift */; };
 		455CDE342599F00300742F46 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE302599F00200742F46 /* UIViewController+Utils.swift */; };
 		455CDE352599F00300742F46 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE312599F00300742F46 /* AppDefaults.swift */; };
 		455CDE392599F51000742F46 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE382599F51000742F46 /* BaseViewController.swift */; };
-		455CDE3C2599F83E00742F46 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE3B2599F83E00742F46 /* SplashViewController.swift */; };
-		455CDE3F259A00C300742F46 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE3E259A00C300742F46 /* HomeViewController.swift */; };
 		455CDE45259A41B600742F46 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455CDE44259A41B600742F46 /* Launch Screen.storyboard */; };
 		455CDE4B259B548100742F46 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE4A259B548100742F46 /* Word.swift */; };
-		455CDE4F259B57CD00742F46 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE4E259B57CD00742F46 /* BaseButton.swift */; };
 		455CDE82259B976000742F46 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 455CDE81259B976000742F46 /* Settings.bundle */; };
-		455CDE88259CC92900742F46 /* WordViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE87259CC92900742F46 /* WordViewerViewController.swift */; };
 		45AA5C6B25990134007672C1 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6925990134007672C1 /* beachday.ttf */; };
 		45AA5C6C25990134007672C1 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */; };
 		45AA5C7625990648007672C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C7525990647007672C1 /* Assets.xcassets */; };
@@ -27,17 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		451C9AA025B872CB002CBFB5 /* HomeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSettingsViewController.swift; sourceTree = "<group>"; };
 		455CDE2E2599F00200742F46 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		455CDE302599F00200742F46 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		455CDE312599F00300742F46 /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		455CDE382599F51000742F46 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		455CDE3B2599F83E00742F46 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		455CDE3E259A00C300742F46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		455CDE44259A41B600742F46 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		455CDE4A259B548100742F46 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		455CDE4E259B57CD00742F46 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		455CDE81259B976000742F46 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		455CDE87259CC92900742F46 /* WordViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewerViewController.swift; sourceTree = "<group>"; };
 		45AA5C6925990134007672C1 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
 		45AA5C7525990647007672C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				455CDE382599F51000742F46 /* BaseViewController.swift */,
-				455CDE4E259B57CD00742F46 /* BaseButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -128,9 +121,7 @@
 			children = (
 				455CDE372599F51000742F46 /* Base */,
 				45C4B87325985B60006A8F8B /* Main.storyboard */,
-				455CDE3B2599F83E00742F46 /* SplashViewController.swift */,
-				455CDE3E259A00C300742F46 /* HomeViewController.swift */,
-				455CDE87259CC92900742F46 /* WordViewerViewController.swift */,
+				451C9AA025B872CB002CBFB5 /* HomeSettingsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,17 +228,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451C9AA125B872CB002CBFB5 /* HomeSettingsViewController.swift in Sources */,
 				455CDE322599F00300742F46 /* Delay.swift in Sources */,
-				455CDE88259CC92900742F46 /* WordViewerViewController.swift in Sources */,
 				45C4B86E25985B60006A8F8B /* AppDelegate.swift in Sources */,
 				45C4B87025985B60006A8F8B /* SceneDelegate.swift in Sources */,
 				455CDE342599F00300742F46 /* UIViewController+Utils.swift in Sources */,
-				455CDE4F259B57CD00742F46 /* BaseButton.swift in Sources */,
-				455CDE3F259A00C300742F46 /* HomeViewController.swift in Sources */,
 				455CDE392599F51000742F46 /* BaseViewController.swift in Sources */,
 				455CDE4B259B548100742F46 /* Word.swift in Sources */,
 				455CDE352599F00300742F46 /* AppDefaults.swift in Sources */,
-				455CDE3C2599F83E00742F46 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

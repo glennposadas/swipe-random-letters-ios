@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "car.jpg",
+      "filename" : "ic_checkmark_on.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ic_checkmark_on@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "ic_checkmark_on@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

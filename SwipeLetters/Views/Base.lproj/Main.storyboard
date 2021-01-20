@@ -1,345 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C3T-bs-A6M">
-    <device id="retina6_5" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C3T-bs-A6M">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Bubble Bobble.ttf">
-            <string>BubbleBobble</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--Splash View Controller-->
+        <!--Home Settings View Controller-->
         <scene sceneID="Jvx-BT-qBV">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" id="C3T-bs-A6M" customClass="SplashViewController" customModule="BabyObjectsTalk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeSettingsViewController" id="C3T-bs-A6M" customClass="HomeSettingsViewController" customModule="SwipeLetters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kIb-RC-5qN">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="1Ew-W0-xcr">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby" translatesAutoresizingMaskIntoConstraints="NO" id="8j4-m5-G6Y">
-                                <rect key="frame" x="0.0" y="1" width="340.66666666666669" height="443"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-PL-Z2U">
+                                <rect key="frame" x="16" y="388" width="396" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="8j4-m5-G6Y" secondAttribute="height" multiplier="1:1.3" id="N0O-AX-BsV"/>
+                                    <constraint firstAttribute="height" constant="150" id="NCE-hM-D3a"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dc0-3p-Zeh">
-                                <rect key="frame" x="270.66666666666669" y="0.0" width="565.33333333333326" height="414"/>
-                                <string key="text">My First 
-Words</string>
-                                <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="120"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="9" height="8"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="100"/>
+                                <size key="titleShadowOffset" width="2" height="3"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.0" green="0.54117647058823526" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="190"/>
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="200"/>
                                 </variation>
-                            </label>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLb-Fh-4Zc">
+                                <rect key="frame" x="16" y="822" width="396" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PGt-Fx-oV8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VlH-3K-rjN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VlH-3K-rjN" firstAttribute="trailing" secondItem="Dc0-3p-Zeh" secondAttribute="trailing" constant="16" id="1iQ-9G-sDi"/>
-                            <constraint firstItem="Dc0-3p-Zeh" firstAttribute="top" secondItem="kIb-RC-5qN" secondAttribute="top" id="7NY-gO-M64"/>
-                            <constraint firstItem="1Ew-W0-xcr" firstAttribute="top" secondItem="VlH-3K-rjN" secondAttribute="top" id="Cg8-rA-S5A"/>
-                            <constraint firstItem="8j4-m5-G6Y" firstAttribute="top" secondItem="VlH-3K-rjN" secondAttribute="top" constant="1" id="Oc8-JC-Kya"/>
-                            <constraint firstItem="Dc0-3p-Zeh" firstAttribute="leading" secondItem="8j4-m5-G6Y" secondAttribute="trailing" constant="-70" id="QLL-Ym-y17"/>
-                            <constraint firstAttribute="bottom" secondItem="Dc0-3p-Zeh" secondAttribute="bottom" id="ZoP-dL-psE"/>
+                            <constraint firstItem="tLb-Fh-4Zc" firstAttribute="leading" secondItem="VlH-3K-rjN" secondAttribute="leading" constant="16" id="1WW-To-bBB"/>
+                            <constraint firstItem="1Ew-W0-xcr" firstAttribute="top" secondItem="kIb-RC-5qN" secondAttribute="top" id="Cg8-rA-S5A"/>
+                            <constraint firstItem="VlH-3K-rjN" firstAttribute="trailing" secondItem="5cY-PL-Z2U" secondAttribute="trailing" constant="16" id="I3w-1A-s9I"/>
+                            <constraint firstItem="VlH-3K-rjN" firstAttribute="trailing" secondItem="tLb-Fh-4Zc" secondAttribute="trailing" constant="16" id="SsY-Zo-BaT"/>
+                            <constraint firstItem="5cY-PL-Z2U" firstAttribute="centerY" secondItem="1Ew-W0-xcr" secondAttribute="centerY" id="cTz-SN-4CD"/>
                             <constraint firstAttribute="bottom" secondItem="1Ew-W0-xcr" secondAttribute="bottom" id="cVc-uN-tsi"/>
-                            <constraint firstAttribute="bottom" secondItem="8j4-m5-G6Y" secondAttribute="bottom" constant="-30" id="cv9-yk-zvR"/>
                             <constraint firstAttribute="trailing" secondItem="1Ew-W0-xcr" secondAttribute="trailing" id="dYm-hJ-bR5"/>
-                            <constraint firstItem="8j4-m5-G6Y" firstAttribute="leading" secondItem="kIb-RC-5qN" secondAttribute="leading" id="def-F1-Egc"/>
                             <constraint firstItem="1Ew-W0-xcr" firstAttribute="leading" secondItem="kIb-RC-5qN" secondAttribute="leading" id="dyn-gs-JD3"/>
+                            <constraint firstItem="tLb-Fh-4Zc" firstAttribute="bottom" secondItem="VlH-3K-rjN" secondAttribute="bottom" constant="-20" id="mg4-Jw-RPh"/>
+                            <constraint firstItem="5cY-PL-Z2U" firstAttribute="leading" secondItem="VlH-3K-rjN" secondAttribute="leading" constant="16" id="uC6-Uf-YUs"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView_SplashIcon" destination="8j4-m5-G6Y" id="TjG-Kk-B3c"/>
-                        <outlet property="label_SplashTitle" destination="Dc0-3p-Zeh" id="qBh-70-mAl"/>
+                        <outlet property="button_Start" destination="5cY-PL-Z2U" id="UCW-KQ-7zI"/>
+                        <outlet property="view_AdContainer" destination="tLb-Fh-4Zc" id="xfT-QS-sM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbt-O9-GME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-919" y="423"/>
-        </scene>
-        <!--Home View Controller-->
-        <scene sceneID="93g-yU-2Jc">
-            <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="43R-Jl-SAN" customClass="HomeViewController" customModule="BabyObjectsTalk" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YYn-Wc-IrO">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="1000"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-Lg-7Uj">
-                                <rect key="frame" x="552" y="0.0" width="300" height="1000"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utM-fv-5EB" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="738"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPf-a4-Dp0" userLabel="Apple Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="8" width="138" height="138"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="BPf-a4-Dp0" secondAttribute="height" multiplier="1:1" id="dDi-uq-dJM"/>
-                                                </constraints>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="apple"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="apple"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="CO1-y7-eu4"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFU-qY-A8i" userLabel="Car Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="154" y="8" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="car"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="car"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="0Pj-zx-bOY"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-Ag-bwN" userLabel="Cat Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="154" y="154" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="cat"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="cat"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="MbF-kV-Lf4"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abU-4q-e5i" userLabel="Duck Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="154" y="300" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="duck"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="duck"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="R3d-n5-cIe"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l54-l5-qrA" userLabel="Flower Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="154" y="446" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="flower"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="flower"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="0IW-JY-CIV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-yp-SsZ" userLabel="Ball Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="154" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="ball"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="ball"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="WYl-Ld-YuJ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc4-Sy-ied" userLabel="Dog Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="300" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="dog"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="dog"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="D5O-xf-vem"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUo-d7-bMt" userLabel="Boat Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="446" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="boat"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="boat"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="i82-bb-MoJ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha4-4E-FG8" userLabel="Train Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="592" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="train"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="train"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="YTz-q8-ZtN"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZp-1b-ucq" userLabel="Shoes Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
-                                                <rect key="frame" x="154" y="592" width="138" height="138"/>
-                                                <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                <state key="normal" image="shoes"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="shoes"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="XfU-A3-w3N"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstItem="Ha4-4E-FG8" firstAttribute="height" secondItem="nUo-d7-bMt" secondAttribute="height" id="0dl-Hf-ufp"/>
-                                            <constraint firstItem="abU-4q-e5i" firstAttribute="leading" secondItem="dX8-Ag-bwN" secondAttribute="leading" id="3v4-88-2dW"/>
-                                            <constraint firstItem="Ha4-4E-FG8" firstAttribute="trailing" secondItem="nUo-d7-bMt" secondAttribute="trailing" id="4XO-ff-4Cd"/>
-                                            <constraint firstItem="dX8-Ag-bwN" firstAttribute="trailing" secondItem="kFU-qY-A8i" secondAttribute="trailing" id="8co-vB-dir"/>
-                                            <constraint firstItem="l54-l5-qrA" firstAttribute="trailing" secondItem="abU-4q-e5i" secondAttribute="trailing" id="9qa-y4-4Uj"/>
-                                            <constraint firstItem="qZp-1b-ucq" firstAttribute="top" secondItem="Ha4-4E-FG8" secondAttribute="top" id="AFf-x8-fYB"/>
-                                            <constraint firstItem="Ha4-4E-FG8" firstAttribute="leading" secondItem="nUo-d7-bMt" secondAttribute="leading" id="Bcb-6W-q5q"/>
-                                            <constraint firstItem="r9E-yp-SsZ" firstAttribute="trailing" secondItem="BPf-a4-Dp0" secondAttribute="trailing" id="DzN-qI-2OH"/>
-                                            <constraint firstItem="abU-4q-e5i" firstAttribute="bottom" secondItem="fc4-Sy-ied" secondAttribute="bottom" id="FaD-87-BFh"/>
-                                            <constraint firstItem="qZp-1b-ucq" firstAttribute="trailing" secondItem="l54-l5-qrA" secondAttribute="trailing" id="Gsj-dk-trz"/>
-                                            <constraint firstItem="dX8-Ag-bwN" firstAttribute="top" secondItem="r9E-yp-SsZ" secondAttribute="top" id="K8I-gu-Slf"/>
-                                            <constraint firstAttribute="trailing" secondItem="kFU-qY-A8i" secondAttribute="trailing" constant="8" id="KlF-5w-j3W"/>
-                                            <constraint firstItem="qZp-1b-ucq" firstAttribute="leading" secondItem="l54-l5-qrA" secondAttribute="leading" id="Lwf-b6-E1w"/>
-                                            <constraint firstItem="l54-l5-qrA" firstAttribute="top" secondItem="nUo-d7-bMt" secondAttribute="top" id="MDj-5o-yp7"/>
-                                            <constraint firstItem="fc4-Sy-ied" firstAttribute="leading" secondItem="r9E-yp-SsZ" secondAttribute="leading" id="PFW-fU-5lq"/>
-                                            <constraint firstItem="kFU-qY-A8i" firstAttribute="top" secondItem="BPf-a4-Dp0" secondAttribute="top" id="QBG-rB-WPL"/>
-                                            <constraint firstItem="l54-l5-qrA" firstAttribute="leading" secondItem="abU-4q-e5i" secondAttribute="leading" id="QOA-ch-Csk"/>
-                                            <constraint firstItem="abU-4q-e5i" firstAttribute="top" secondItem="fc4-Sy-ied" secondAttribute="top" id="T7i-8E-Psg"/>
-                                            <constraint firstItem="r9E-yp-SsZ" firstAttribute="leading" secondItem="BPf-a4-Dp0" secondAttribute="leading" id="Vin-O8-9qp"/>
-                                            <constraint firstItem="kFU-qY-A8i" firstAttribute="bottom" secondItem="BPf-a4-Dp0" secondAttribute="bottom" id="W1g-SF-XHa"/>
-                                            <constraint firstItem="Ha4-4E-FG8" firstAttribute="top" secondItem="nUo-d7-bMt" secondAttribute="bottom" constant="8" id="ZiJ-3F-TZK"/>
-                                            <constraint firstItem="dX8-Ag-bwN" firstAttribute="leading" secondItem="kFU-qY-A8i" secondAttribute="leading" id="aKX-I5-dYw"/>
-                                            <constraint firstItem="l54-l5-qrA" firstAttribute="bottom" secondItem="nUo-d7-bMt" secondAttribute="bottom" id="dZm-3p-iNc"/>
-                                            <constraint firstItem="nUo-d7-bMt" firstAttribute="leading" secondItem="fc4-Sy-ied" secondAttribute="leading" id="eUP-tw-fhs"/>
-                                            <constraint firstItem="BPf-a4-Dp0" firstAttribute="top" secondItem="utM-fv-5EB" secondAttribute="top" constant="8" id="gz4-Qc-gVw"/>
-                                            <constraint firstItem="r9E-yp-SsZ" firstAttribute="top" secondItem="BPf-a4-Dp0" secondAttribute="bottom" constant="8" id="h0F-dT-XRI"/>
-                                            <constraint firstItem="abU-4q-e5i" firstAttribute="trailing" secondItem="dX8-Ag-bwN" secondAttribute="trailing" id="hlu-gS-C3b"/>
-                                            <constraint firstItem="fc4-Sy-ied" firstAttribute="top" secondItem="r9E-yp-SsZ" secondAttribute="bottom" constant="8" id="hu6-cN-ypK"/>
-                                            <constraint firstItem="nUo-d7-bMt" firstAttribute="top" secondItem="fc4-Sy-ied" secondAttribute="bottom" constant="8" id="krh-xr-Ay4"/>
-                                            <constraint firstItem="fc4-Sy-ied" firstAttribute="height" secondItem="r9E-yp-SsZ" secondAttribute="height" id="nmG-M7-KRC"/>
-                                            <constraint firstItem="qZp-1b-ucq" firstAttribute="bottom" secondItem="Ha4-4E-FG8" secondAttribute="bottom" id="old-CG-Kuc"/>
-                                            <constraint firstItem="kFU-qY-A8i" firstAttribute="leading" secondItem="utM-fv-5EB" secondAttribute="centerX" constant="4" id="rXD-lM-x6m"/>
-                                            <constraint firstItem="BPf-a4-Dp0" firstAttribute="leading" secondItem="utM-fv-5EB" secondAttribute="leading" constant="8" id="sIE-Sn-hib"/>
-                                            <constraint firstAttribute="centerX" secondItem="BPf-a4-Dp0" secondAttribute="trailing" constant="4" id="sJ1-Ua-CIU"/>
-                                            <constraint firstItem="fc4-Sy-ied" firstAttribute="trailing" secondItem="r9E-yp-SsZ" secondAttribute="trailing" id="tlE-io-40U"/>
-                                            <constraint firstItem="nUo-d7-bMt" firstAttribute="trailing" secondItem="fc4-Sy-ied" secondAttribute="trailing" id="ue5-aw-31v"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ha4-4E-FG8" secondAttribute="bottom" constant="8" id="yCJ-yp-S02"/>
-                                            <constraint firstItem="dX8-Ag-bwN" firstAttribute="bottom" secondItem="r9E-yp-SsZ" secondAttribute="bottom" id="ygh-Hx-JF8"/>
-                                            <constraint firstItem="nUo-d7-bMt" firstAttribute="height" secondItem="fc4-Sy-ied" secondAttribute="height" id="ygx-ru-eaa"/>
-                                            <constraint firstItem="r9E-yp-SsZ" firstAttribute="height" secondItem="BPf-a4-Dp0" secondAttribute="height" id="zcg-Cz-voR"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="LOX-8x-ZOB"/>
-                                    <constraint firstItem="utM-fv-5EB" firstAttribute="top" secondItem="WYv-Lg-7Uj" secondAttribute="top" id="Tzt-zb-lyt"/>
-                                    <constraint firstAttribute="bottom" secondItem="utM-fv-5EB" secondAttribute="bottom" id="YKf-p0-ZqE"/>
-                                    <constraint firstItem="utM-fv-5EB" firstAttribute="width" secondItem="WYv-Lg-7Uj" secondAttribute="width" id="hpL-yi-6F7"/>
-                                    <constraint firstItem="utM-fv-5EB" firstAttribute="leading" secondItem="WYv-Lg-7Uj" secondAttribute="leading" id="jol-58-wXl"/>
-                                    <constraint firstAttribute="trailing" secondItem="utM-fv-5EB" secondAttribute="trailing" id="t07-hW-r5W"/>
-                                </constraints>
-                            </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13w-GL-mGE" userLabel="Page View Controller Container View">
-                                <rect key="frame" x="0.0" y="0.0" width="552" height="1000"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="LRK-gz-IXu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="WYv-Lg-7Uj" firstAttribute="top" secondItem="YYn-Wc-IrO" secondAttribute="top" id="0qH-Ci-KGV"/>
-                            <constraint firstItem="LRK-gz-IXu" firstAttribute="trailing" secondItem="WYv-Lg-7Uj" secondAttribute="trailing" id="21F-yi-WZQ"/>
-                            <constraint firstAttribute="bottom" secondItem="13w-GL-mGE" secondAttribute="bottom" id="5qe-7j-Hfb"/>
-                            <constraint firstItem="13w-GL-mGE" firstAttribute="top" secondItem="LRK-gz-IXu" secondAttribute="top" id="P4o-Pl-UPh"/>
-                            <constraint firstItem="WYv-Lg-7Uj" firstAttribute="leading" secondItem="13w-GL-mGE" secondAttribute="trailing" id="Wsf-xX-Iwf"/>
-                            <constraint firstItem="13w-GL-mGE" firstAttribute="leading" secondItem="YYn-Wc-IrO" secondAttribute="leading" id="bTH-2E-AOp"/>
-                            <constraint firstItem="WYv-Lg-7Uj" firstAttribute="bottom" secondItem="YYn-Wc-IrO" secondAttribute="bottom" id="sjh-xR-84N"/>
-                        </constraints>
-                    </view>
-                    <size key="freeformSize" width="896" height="1000"/>
-                    <connections>
-                        <outlet property="constraint_ScrollViewWidth" destination="LOX-8x-ZOB" id="bWT-bJ-wcT"/>
-                        <outlet property="contentView" destination="utM-fv-5EB" id="URg-lC-dzl"/>
-                        <outlet property="pageControllerContainerView" destination="13w-GL-mGE" id="rZh-kC-mYd"/>
-                        <outlet property="scrollView" destination="WYv-Lg-7Uj" id="ske-h1-bA4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZN-jK-mV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-919.41964285714278" y="1579.7101449275362"/>
-        </scene>
-        <!--Word Viewer View Controller-->
-        <scene sceneID="TWo-J2-i7T">
-            <objects>
-                <viewController storyboardIdentifier="WordViewerViewController" id="Wxh-eo-Skz" customClass="WordViewerViewController" customModule="BabyObjectsTalk" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4JF-OM-eYV">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aVj-Y3-9fe">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⬅️ Swipe back and forth to change the page of the book. ➡️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-c6-18c">
-                                <rect key="frame" x="44" y="339.66666666666669" width="808" height="37.333333333333314"/>
-                                <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="33"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="hUm-Pp-BdO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hUm-Pp-BdO" firstAttribute="trailing" secondItem="aVj-Y3-9fe" secondAttribute="trailing" id="8xX-Ca-cH6"/>
-                            <constraint firstItem="hUm-Pp-BdO" firstAttribute="bottom" secondItem="aVj-Y3-9fe" secondAttribute="bottom" id="gbc-8z-UEh"/>
-                            <constraint firstItem="UaQ-c6-18c" firstAttribute="leading" secondItem="aVj-Y3-9fe" secondAttribute="leading" id="j6S-cb-r1D"/>
-                            <constraint firstItem="aVj-Y3-9fe" firstAttribute="leading" secondItem="hUm-Pp-BdO" secondAttribute="leading" id="jGD-cV-UK0"/>
-                            <constraint firstItem="UaQ-c6-18c" firstAttribute="trailing" secondItem="aVj-Y3-9fe" secondAttribute="trailing" id="yD4-LX-vfl"/>
-                            <constraint firstItem="aVj-Y3-9fe" firstAttribute="top" secondItem="hUm-Pp-BdO" secondAttribute="top" id="yqw-Ar-lzV"/>
-                            <constraint firstItem="UaQ-c6-18c" firstAttribute="bottom" secondItem="aVj-Y3-9fe" secondAttribute="bottom" constant="-16" id="zB5-Xr-eyV"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="aVj-Y3-9fe" id="fEX-9Y-F3E"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lr5-3I-ydu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-292" y="1157"/>
+            <point key="canvasLocation" x="-920.28985507246387" y="422.54464285714283"/>
         </scene>
     </scenes>
     <resources>
-        <image name="apple" width="614" height="626"/>
-        <image name="baby" width="1200" height="1200"/>
-        <image name="ball" width="626" height="626"/>
-        <image name="bg" width="3035.666748046875" height="2189"/>
-        <image name="boat" width="626" height="626"/>
-        <image name="car" width="500" height="500"/>
-        <image name="cat" width="363" height="360"/>
-        <image name="dog" width="626" height="680"/>
-        <image name="duck" width="626" height="621"/>
-        <image name="flower" width="626" height="626"/>
-        <image name="shoes" width="626" height="417"/>
-        <image name="train" width="1488" height="1168"/>
+        <image name="bg" width="936" height="936"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
