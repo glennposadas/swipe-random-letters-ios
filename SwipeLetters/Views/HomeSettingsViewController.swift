@@ -5,6 +5,7 @@
 //  Created by Glenn Posadas on 1/20/21.
 //
 
+import GoogleMobileAds
 import UIKit
 
 class HomeSettingsViewController: BaseViewController {
@@ -15,6 +16,8 @@ class HomeSettingsViewController: BaseViewController {
     @IBOutlet weak var view_AdContainer: UIView!
     @IBOutlet weak var button_RandomizeLetters: UIButton!
     
+    private var bannerView: GADBannerView!
+    
     // MARK: - Overrides
     // MARK: Functions
     
@@ -23,6 +26,7 @@ class HomeSettingsViewController: BaseViewController {
         
         setupRandomizeButton()
         animateStartButton()
+        setupBannerAd()
     }
     
     private func setupRandomizeButton() {
@@ -48,6 +52,21 @@ class HomeSettingsViewController: BaseViewController {
                 self.animateStartButton()
             }
         }
+    }
+    
+    private func setupBannerAd() {
+        view_AdContainer.backgroundColor = .clear
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        
+        bannerView.adUnitID = PubKeys.Admob.homeBannerAd
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view_AdContainer.addSubview(self.bannerView)
+        bannerView.bottomAnchor.constraint(equalTo: self.view_AdContainer.bottomAnchor).isActive = true
+        bannerView.centerXAnchor.constraint(equalTo: self.view_AdContainer.centerXAnchor).isActive = true
     }
     
     @IBAction func randomizeLettersToggled(_ sender: Any) {

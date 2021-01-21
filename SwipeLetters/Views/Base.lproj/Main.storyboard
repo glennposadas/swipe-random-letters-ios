@@ -50,64 +50,67 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="iW1-8L-ntn">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cm-wx-F4q">
-                                <rect key="frame" x="71.666666666666686" y="388" width="285" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="WVX-wk-5S0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="100"/>
-                                <size key="titleShadowOffset" width="2" height="3"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="200"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="C3T-bs-A6M" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="OTD-Z5-Bbz"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTY-ko-FOj">
-                                <rect key="frame" x="16" y="822" width="396" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="JhL-fU-oJf"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-ot-nHG">
-                                <rect key="frame" x="93.666666666666686" y="568" width="241" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="gOg-87-qjs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="Randomize Letters" image="ic_checkbox_off">
-                                    <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="35"/>
-                                </variation>
-                                <connections>
-                                    <action selector="randomizeLettersToggled:" destination="Gbe-oU-du2" eventType="touchUpInside" id="3JP-5k-i3R"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-N4-6PZ">
+                                <rect key="frame" x="16" y="319" width="396" height="288"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wn8-K6-Ruf">
+                                        <rect key="frame" x="55.666666666666686" y="0.0" width="285" height="230"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cm-wx-F4q">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="WVX-wk-5S0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="100"/>
+                                                <size key="titleShadowOffset" width="2" height="3"/>
+                                                <state key="normal" title="START">
+                                                    <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="200"/>
+                                                </variation>
+                                                <connections>
+                                                    <segue destination="C3T-bs-A6M" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="OTD-Z5-Bbz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-ot-nHG">
+                                                <rect key="frame" x="22.333333333333329" y="180" width="240.33333333333337" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gOg-87-qjs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                                <state key="normal" title="Randomize Letters" image="ic_checkbox_off">
+                                                    <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="35"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="randomizeLettersToggled:" destination="Gbe-oU-du2" eventType="touchUpInside" id="3JP-5k-i3R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTY-ko-FOj">
+                                        <rect key="frame" x="0.0" y="238" width="396" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JhL-fU-oJf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f38-b2-seg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bFB-N4-6PZ" firstAttribute="centerY" secondItem="iW1-8L-ntn" secondAttribute="centerY" id="6Jl-pa-5k4"/>
                             <constraint firstAttribute="bottom" secondItem="iW1-8L-ntn" secondAttribute="bottom" id="FPf-Gd-wwB"/>
-                            <constraint firstItem="2cm-wx-F4q" firstAttribute="centerX" secondItem="iW1-8L-ntn" secondAttribute="centerX" id="Ftn-tl-V76"/>
-                            <constraint firstItem="f38-b2-seg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2cm-wx-F4q" secondAttribute="trailing" constant="16" id="Hmn-iy-Nvv"/>
-                            <constraint firstItem="2cm-wx-F4q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f38-b2-seg" secondAttribute="leading" constant="16" id="KEe-3k-786"/>
-                            <constraint firstItem="2cm-wx-F4q" firstAttribute="centerY" secondItem="iW1-8L-ntn" secondAttribute="centerY" id="KJu-Io-Dtk"/>
                             <constraint firstItem="iW1-8L-ntn" firstAttribute="leading" secondItem="DKr-qg-Peb" secondAttribute="leading" id="Q2a-yd-ZnJ"/>
-                            <constraint firstItem="RQO-ot-nHG" firstAttribute="top" secondItem="2cm-wx-F4q" secondAttribute="bottom" constant="30" id="QY0-wD-47Y"/>
-                            <constraint firstItem="f38-b2-seg" firstAttribute="trailing" secondItem="WTY-ko-FOj" secondAttribute="trailing" constant="16" id="UhI-3x-xK2"/>
                             <constraint firstItem="iW1-8L-ntn" firstAttribute="top" secondItem="DKr-qg-Peb" secondAttribute="top" id="Xvc-GX-qsi"/>
-                            <constraint firstItem="WTY-ko-FOj" firstAttribute="bottom" secondItem="f38-b2-seg" secondAttribute="bottom" constant="-20" id="a4A-Iw-cCu"/>
+                            <constraint firstItem="bFB-N4-6PZ" firstAttribute="centerX" secondItem="iW1-8L-ntn" secondAttribute="centerX" id="dGH-wW-oA8"/>
                             <constraint firstAttribute="trailing" secondItem="iW1-8L-ntn" secondAttribute="trailing" id="fVd-ea-FX6"/>
-                            <constraint firstItem="RQO-ot-nHG" firstAttribute="centerX" secondItem="2cm-wx-F4q" secondAttribute="centerX" id="oZh-AK-YRO"/>
-                            <constraint firstItem="WTY-ko-FOj" firstAttribute="leading" secondItem="f38-b2-seg" secondAttribute="leading" constant="16" id="sUs-xy-PfO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -118,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bM-wv-njX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-789" y="431"/>
+            <point key="canvasLocation" x="-789.25233644859804" y="430.88552915766741"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="x1K-LT-n8h">
@@ -132,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ppN-Eu-fll">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="16" y="60" width="396" height="816"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="300"/>
                                 <color key="textColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -151,11 +154,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="su3-8U-PRy" secondAttribute="bottom" id="2b4-bL-65g"/>
-                            <constraint firstItem="ppN-Eu-fll" firstAttribute="leading" secondItem="gha-KF-6TK" secondAttribute="leading" id="CTH-tQ-RsT"/>
-                            <constraint firstItem="ppN-Eu-fll" firstAttribute="trailing" secondItem="gha-KF-6TK" secondAttribute="trailing" id="HAO-pq-Ksu"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="leading" secondItem="gha-KF-6TK" secondAttribute="leading" constant="16" id="CTH-tQ-RsT"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="trailing" secondItem="gha-KF-6TK" secondAttribute="trailing" constant="-16" id="HAO-pq-Ksu"/>
                             <constraint firstAttribute="trailing" secondItem="su3-8U-PRy" secondAttribute="trailing" id="KrF-KP-TmU"/>
-                            <constraint firstItem="ppN-Eu-fll" firstAttribute="top" secondItem="gha-KF-6TK" secondAttribute="top" id="Vqz-dj-KF2"/>
-                            <constraint firstItem="gha-KF-6TK" firstAttribute="bottom" secondItem="ppN-Eu-fll" secondAttribute="bottom" id="bI7-XO-IfB"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="top" secondItem="gha-KF-6TK" secondAttribute="top" constant="16" id="Vqz-dj-KF2"/>
+                            <constraint firstItem="gha-KF-6TK" firstAttribute="bottom" secondItem="ppN-Eu-fll" secondAttribute="bottom" constant="16" id="bI7-XO-IfB"/>
                             <constraint firstItem="su3-8U-PRy" firstAttribute="top" secondItem="1dB-XI-t19" secondAttribute="top" id="hVQ-f9-fJT"/>
                             <constraint firstItem="su3-8U-PRy" firstAttribute="leading" secondItem="1dB-XI-t19" secondAttribute="leading" id="z0e-Mf-bt6"/>
                         </constraints>
