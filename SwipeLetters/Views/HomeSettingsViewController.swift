@@ -17,6 +17,7 @@ class HomeSettingsViewController: BaseViewController {
     @IBOutlet weak var button_RandomizeLetters: UIButton!
     
     private var bannerView: GADBannerView!
+    private var interstitial: GADInterstitial!
     
     // MARK: - Overrides
     // MARK: Functions
@@ -27,6 +28,7 @@ class HomeSettingsViewController: BaseViewController {
         setupRandomizeButton()
         animateStartButton()
         setupBannerAd()
+        setupInterstitialAd()
     }
     
     private func setupRandomizeButton() {
@@ -69,6 +71,30 @@ class HomeSettingsViewController: BaseViewController {
         bannerView.centerXAnchor.constraint(equalTo: self.view_AdContainer.centerXAnchor).isActive = true
     }
     
+    private func setupInterstitialAd() {
+        interstitial = GADInterstitial(adUnitID: PubKeys.Admob.startInsterstitialAd)
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+    }
+    
+    var tries = 1
+    @IBAction func start(_ sender: Any) {
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+            tries = 0
+        } else {
+            print("Ad wasn't ready")
+            delay(1) {
+                if self.tries <= 2 {
+                    self.start(sender)
+                    self.tries += 1
+                } else {
+                    self.performSegue(withIdentifier: "start", sender: nil)
+                }
+            }
+        }
+    }
+    
     @IBAction func randomizeLettersToggled(_ sender: Any) {
         let generator = UISelectionFeedbackGenerator()
         generator.selectionChanged()
@@ -77,5 +103,14 @@ class HomeSettingsViewController: BaseViewController {
         AppDefaults.store(!useRandomizeLetters, key: .useRandomizeLetters)
         setupRandomizeButton()
         
+    }
+}
+
+// MARK: - GADInterstitialDelegate
+
+extension HomeSettingsViewController: GADInterstitialDelegate {
+    /// Tells the delegate the interstitial had been animated off the screen.
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        performSegue(withIdentifier: "start", sender: nil)
     }
 }

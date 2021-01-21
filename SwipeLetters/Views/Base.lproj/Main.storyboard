@@ -71,7 +71,7 @@
                                                     <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="200"/>
                                                 </variation>
                                                 <connections>
-                                                    <segue destination="C3T-bs-A6M" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="OTD-Z5-Bbz"/>
+                                                    <action selector="start:" destination="Gbe-oU-du2" eventType="touchUpInside" id="NTA-Gm-TUK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-ot-nHG">
@@ -117,6 +117,7 @@
                         <outlet property="button_RandomizeLetters" destination="RQO-ot-nHG" id="m7j-S3-RTJ"/>
                         <outlet property="button_Start" destination="2cm-wx-F4q" id="rBS-20-Nbi"/>
                         <outlet property="view_AdContainer" destination="WTY-ko-FOj" id="vUs-qf-MAK"/>
+                        <segue destination="C3T-bs-A6M" kind="presentation" identifier="start" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="6Iv-XF-MnN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bM-wv-njX" userLabel="First Responder" sceneMemberID="firstResponder"/>
