@@ -9,10 +9,7 @@ import Foundation
 
 /// Keep markers alphabetically arranged for easier viewing.
 enum AppDefaultsKey: String, CodingKey {
-    /// By default, the app uses US English
-    case useUSEnglish = "use_us_english"
-    /// Check if the user has been asked once.
-    case askedSettings
+    case useRandomizeLetters
 }
 
 /// The class that has multiple class functions for handling defaults.

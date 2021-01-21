@@ -8,7 +8,7 @@
 import Foundation
 
 struct DataManager {
-    static var data = [
+    static var alphabeticalData: [String] = [
         "Aa",
         "Bb",
         "Cc",
@@ -36,4 +36,11 @@ struct DataManager {
         "Yy",
         "Zz"
     ]
+    
+    static var data: [String] {
+        get {
+            let useRandomizeLetters = AppDefaults.getObjectWithKey(.useRandomizeLetters, type: Bool.self) ?? false
+            return useRandomizeLetters ? alphabeticalData.shuffled() : alphabeticalData
+        }
+    }
 }

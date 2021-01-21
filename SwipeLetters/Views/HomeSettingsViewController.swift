@@ -13,6 +13,7 @@ class HomeSettingsViewController: BaseViewController {
     
     @IBOutlet weak var button_Start: UIButton!
     @IBOutlet weak var view_AdContainer: UIView!
+    @IBOutlet weak var button_RandomizeLetters: UIButton!
     
     // MARK: - Overrides
     // MARK: Functions
@@ -20,7 +21,15 @@ class HomeSettingsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupRandomizeButton()
         animateStartButton()
+    }
+    
+    private func setupRandomizeButton() {
+        let useRandomizeLetters = AppDefaults.getObjectWithKey(.useRandomizeLetters, type: Bool.self)
+        let name = useRandomizeLetters == true ? "ic_checkbox_on" : "ic_checkbox_off"
+        let image = UIImage(named: name)
+        button_RandomizeLetters.setImage(image, for: .normal)
     }
     
     private func animateStartButton() {
@@ -39,5 +48,15 @@ class HomeSettingsViewController: BaseViewController {
                 self.animateStartButton()
             }
         }
+    }
+    
+    @IBAction func randomizeLettersToggled(_ sender: Any) {
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
+        
+        let useRandomizeLetters = AppDefaults.getObjectWithKey(.useRandomizeLetters, type: Bool.self) ?? false
+        AppDefaults.store(!useRandomizeLetters, key: .useRandomizeLetters)
+        setupRandomizeButton()
+        
     }
 }

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic_checkmark_off.png",
+      "filename" : "ic_checkbox_on.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_checkmark_off@2x.png",
+      "filename" : "ic_checkbox_on@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_checkmark_off@3x.png",
+      "filename" : "ic_checkbox_on@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
