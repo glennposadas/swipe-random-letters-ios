@@ -476,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				INFOPLIST_FILE = SwipeLetters/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -484,7 +485,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.babyobjectstalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.swipeletters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -499,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				INFOPLIST_FILE = SwipeLetters/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -507,7 +509,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.babyobjectstalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.swipeletters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;

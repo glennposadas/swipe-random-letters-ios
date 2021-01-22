@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htS-sL-Whz">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VlH-3K-rjN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VlH-3K-rjN" firstAttribute="trailing" secondItem="htS-sL-Whz" secondAttribute="trailing" id="KJ0-hU-T14"/>
-                            <constraint firstItem="htS-sL-Whz" firstAttribute="top" secondItem="VlH-3K-rjN" secondAttribute="top" id="Low-V5-zmg"/>
-                            <constraint firstItem="htS-sL-Whz" firstAttribute="leading" secondItem="VlH-3K-rjN" secondAttribute="leading" id="cbf-om-TWa"/>
-                            <constraint firstItem="VlH-3K-rjN" firstAttribute="bottom" secondItem="htS-sL-Whz" secondAttribute="bottom" id="yJ5-vw-UTV"/>
+                            <constraint firstAttribute="trailing" secondItem="htS-sL-Whz" secondAttribute="trailing" id="KJ0-hU-T14"/>
+                            <constraint firstItem="htS-sL-Whz" firstAttribute="top" secondItem="kIb-RC-5qN" secondAttribute="top" id="Low-V5-zmg"/>
+                            <constraint firstItem="htS-sL-Whz" firstAttribute="leading" secondItem="kIb-RC-5qN" secondAttribute="leading" id="cbf-om-TWa"/>
+                            <constraint firstAttribute="bottom" secondItem="htS-sL-Whz" secondAttribute="bottom" id="yJ5-vw-UTV"/>
                         </constraints>
                     </view>
                     <connections>
