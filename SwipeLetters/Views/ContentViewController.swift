@@ -21,7 +21,12 @@ class ContentViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if ENVManager.currentEnv == .development {
+            label.backgroundColor = .blue
+        }
+        
         label.text = text
+        label.sizeToFit()
     }
     
     @IBAction func labelTapped(_ sender: UITapGestureRecognizer) {

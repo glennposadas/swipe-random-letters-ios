@@ -79,6 +79,11 @@ class HomeSettingsViewController: BaseViewController {
     
     var tries = 1
     @IBAction func start(_ sender: Any) {
+        if ENVManager.currentEnv == .development {
+            self.performSegue(withIdentifier: "start", sender: nil)
+            return
+        }
+        
         if interstitial.isReady {
             interstitial.present(fromRootViewController: self)
             tries = 0

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gbe-oU-du2">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController storyboardIdentifier="SliderViewController" id="C3T-bs-A6M" customClass="SliderViewController" customModule="SwipeLetters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kIb-RC-5qN">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htS-sL-Whz">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -44,17 +44,17 @@
             <objects>
                 <viewController storyboardIdentifier="HomeSettingsViewController" id="Gbe-oU-du2" customClass="HomeSettingsViewController" customModule="SwipeLetters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DKr-qg-Peb">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="iW1-8L-ntn">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-N4-6PZ">
-                                <rect key="frame" x="16" y="319" width="396" height="288"/>
+                                <rect key="frame" x="-38" y="140" width="396" height="288"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wn8-K6-Ruf">
-                                        <rect key="frame" x="55.666666666666686" y="0.0" width="285" height="230"/>
+                                        <rect key="frame" x="55.5" y="0.0" width="285" height="230"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cm-wx-F4q">
                                                 <rect key="frame" x="0.0" y="0.0" width="285" height="150"/>
@@ -75,7 +75,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-ot-nHG">
-                                                <rect key="frame" x="22.333333333333329" y="180" width="240.33333333333337" height="50"/>
+                                                <rect key="frame" x="22.5" y="180" width="240.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="gOg-87-qjs"/>
                                                 </constraints>
@@ -129,14 +129,14 @@
             <objects>
                 <viewController storyboardIdentifier="ContentViewController" id="kvg-TS-bk9" customClass="ContentViewController" customModule="SwipeLetters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1dB-XI-t19">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="su3-8U-PRy">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ppN-Eu-fll">
-                                <rect key="frame" x="16" y="60" width="396" height="816"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ww" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="none" minimumScaleFactor="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="ppN-Eu-fll">
+                                <rect key="frame" x="16" y="103.5" width="288" height="361"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="300"/>
                                 <color key="textColor" red="0.0" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,11 +155,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="su3-8U-PRy" secondAttribute="bottom" id="2b4-bL-65g"/>
+                            <constraint firstItem="gha-KF-6TK" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ppN-Eu-fll" secondAttribute="bottom" constant="4" id="Alz-E9-gje"/>
                             <constraint firstItem="ppN-Eu-fll" firstAttribute="leading" secondItem="gha-KF-6TK" secondAttribute="leading" constant="16" id="CTH-tQ-RsT"/>
                             <constraint firstItem="ppN-Eu-fll" firstAttribute="trailing" secondItem="gha-KF-6TK" secondAttribute="trailing" constant="-16" id="HAO-pq-Ksu"/>
                             <constraint firstAttribute="trailing" secondItem="su3-8U-PRy" secondAttribute="trailing" id="KrF-KP-TmU"/>
-                            <constraint firstItem="ppN-Eu-fll" firstAttribute="top" secondItem="gha-KF-6TK" secondAttribute="top" constant="16" id="Vqz-dj-KF2"/>
-                            <constraint firstItem="gha-KF-6TK" firstAttribute="bottom" secondItem="ppN-Eu-fll" secondAttribute="bottom" constant="16" id="bI7-XO-IfB"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="centerY" secondItem="su3-8U-PRy" secondAttribute="centerY" id="NxM-XG-ppV"/>
+                            <constraint firstItem="ppN-Eu-fll" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gha-KF-6TK" secondAttribute="top" constant="4" id="dZp-T1-Syz"/>
                             <constraint firstItem="su3-8U-PRy" firstAttribute="top" secondItem="1dB-XI-t19" secondAttribute="top" id="hVQ-f9-fJT"/>
                             <constraint firstItem="su3-8U-PRy" firstAttribute="leading" secondItem="1dB-XI-t19" secondAttribute="leading" id="z0e-Mf-bt6"/>
                         </constraints>
@@ -180,7 +181,7 @@
     </scenes>
     <resources>
         <image name="bg" width="936" height="936"/>
-        <image name="ic_checkbox_off" width="27.333333969116211" height="27.333333969116211"/>
+        <image name="ic_checkbox_off" width="27.5" height="27.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -39,6 +39,10 @@ struct DataManager {
     
     static var data: [String] {
         get {
+            if ENVManager.currentEnv == .development {
+                return ["Mm", "Aa", "Ww", "Xx", "Cc"]
+            }
+            
             let useRandomizeLetters = AppDefaults.getObjectWithKey(.useRandomizeLetters, type: Bool.self) ?? false
             return useRandomizeLetters ? alphabeticalData.shuffled() : alphabeticalData
         }
